@@ -1,0 +1,7 @@
+config.py
+__pycache__/
+*.pyc
+juris_env/
+.vscode/
+config.py
+env/
