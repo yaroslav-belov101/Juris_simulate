@@ -55,7 +55,7 @@ async def show_profile(message: types.Message):
         await message.answer("Сначала напишите /start.")
         return
 
-    role_text = "🛡️ Защитник" if profile["role"] == "defender" else "⚖️ Прокурор"
+    role_text = "🛡️ Адвокат" if profile["role"] == "defender" else "⚖️ Прокурор"
     
     name = profile["full_name"] or "Не указано"
     username = f"@{profile['username']}" if profile["username"] else "—"
@@ -89,7 +89,7 @@ async def show_profile(message: types.Message):
         f"Всего кейсов: {total}\n"
         f"Правильно: {correct} ({overall_percent}%)\n\n"
         
-        f"🛡️ <b>Как защитник</b>\n"
+        f"🛡️ <b>Как адвокат</b>\n"
         f"Кейсов: {def_total} | Правильно: {def_correct} ({def_percent}%)\n\n"
         
         f"⚖️ <b>Как прокурор</b>\n"
